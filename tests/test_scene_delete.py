@@ -2,8 +2,7 @@ import json
 import logging
 from pathlib import Path
 
-from roborock_local_server.bundled_backend.https_server.endpoint_rules import default_endpoint_rules, resolve_route
-from roborock_local_server.bundled_backend.shared.context import ServerContext
+from roborock_local_server.backend import default_endpoint_rules, resolve_route, ServerContext
 
 
 def _ctx(tmp_path: Path) -> ServerContext:
